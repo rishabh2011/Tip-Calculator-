@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/rishabh2011/Tip-Calculator-)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Site](https://rishabh2011.github.io/Tip-Calculator-/)
 
 ## My process
 
