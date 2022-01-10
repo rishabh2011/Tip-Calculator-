@@ -18,27 +18,39 @@ var resetBtnActive = false;
 
 //Tip buttons
 $("button.small-box").click(function () {
+
+  customTipInput.val(null);
   deselectLastTip();
+
   selectedTipButton = $(this);
   selectedTipButton.addClass("small-box-active");
+
   tipPercent = Number($(this).val()) * 0.01;
   calculatePrice();
 });
 
 //Custom Tip
 customTipInput.click(function () {
+
   deselectLastTip();
+  tipPercent =  Math.abs(Number($(this).val())) * 0.01;
+  calculatePrice();
+
 });
 
 customTipInput.on("keyup", function(){
+
   tipPercent =  Math.abs(Number($(this).val())) * 0.01;
   calculatePrice();
+
 })
 
 //Bill input
 $("#bill").on("keyup", function(){
+
   bill = Math.abs(Number($(this).val()));
   calculatePrice();
+  
 });
 
 //Number of people input
@@ -101,8 +113,6 @@ function deselectLastTip() {
   if (selectedTipButton) {
     selectedTipButton.removeClass("small-box-active");
   }
-
-  customTipInput.val(null);
 
 }
 
