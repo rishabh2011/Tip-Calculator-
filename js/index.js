@@ -50,7 +50,7 @@ $("#bill").on("keyup", function(){
 
   bill = Math.abs(Number($(this).val()));
   calculatePrice();
-  
+
 });
 
 //Number of people input
@@ -112,6 +112,7 @@ function deselectLastTip() {
 
   if (selectedTipButton) {
     selectedTipButton.removeClass("small-box-active");
+    selectedTipButton = null;
   }
 
 }
