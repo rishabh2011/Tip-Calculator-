@@ -1,0 +1,227 @@
+/* CSS FILE ORGANISATION.
+--> The file is organised into three sections : 
+1. Section 1 is default HTML ELEMENTS.
+2. Section 2 is bootstrap classes and ids.
+3. Section 3 is custom created classes and ids.
+--> The user created css code appears in the same order as seen in the html file.
+*/
+
+/* ===================================
+   ========== HTML ELEMENTS ==========
+   =================================== */
+body {
+  font-family: "Space Mono", monospace;
+  text-align: center;
+  height: 100%;
+  background-color: hsl(185, 41%, 84%);
+}
+
+h3,
+h6,
+p {
+  font-weight: 700;
+}
+
+h3 {
+  color: hsl(186, 14%, 43%);
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+h6.dark {
+  color: hsl(186, 14%, 43%);
+}
+
+/* ===================================
+   ============ BOOTSTRAP ============
+   =================================== */
+.container-fluid {
+  margin: 150px 0px 50px;
+  padding: 0px;
+}
+
+/* ============================================
+   ========== CUSTOM CLASSES AND IDS ==========
+   ============================================ */
+#title {
+  margin-bottom: 50px;
+  letter-spacing: 8px;
+}
+
+.main-container {
+  padding: 25px 40px;
+  width: 60%;
+  margin: 0px auto;
+  border-radius: 20px;
+  text-align: left;
+  background-color: white;
+}
+
+.left-sm-container {
+  margin: 12px 0px 25px;
+  position: relative;
+}
+
+.num-bar {
+  width: 85%;
+  height: 35px;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.num-bar:focus,
+.custom:focus {
+  outline: none;
+  border: solid;
+  border-color: hsl(172, 67%, 45%);
+  border-width: 0.15rem;
+}
+
+.num-bar-wrong {
+  border: solid;
+  border-color: orange;
+  border-width: 0.15rem;
+}
+
+.bg-light-cyan {
+  background-color: hsl(189, 41%, 97%);
+}
+
+.icons {
+  position: absolute;
+  left: 15px;
+  top: 35px;
+}
+
+.small-box {
+  border-radius: 0.3rem;
+  width: 100px;
+  height: 40px;
+  margin: 5px 0px;
+  text-align: center;
+  border: none;
+  font-weight: 700;
+}
+
+.dark-color {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+
+button.small-box:hover {
+  background-color: rgba(38, 192, 171, 0.5);
+  color: hsl(183, 100%, 15%);
+}
+
+.small-box-active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.no-zero {
+  position: absolute;
+  font-size: 0.7rem;
+  right: 60px;
+  top: 0px;
+  color: orange;
+  visibility: hidden;
+}
+
+.right-lg-container {
+  border-radius: 20px;
+  background-color: hsl(183, 100%, 15%);
+  padding: 40px;
+}
+
+.right-sm-container {
+  color: white;
+  line-height: 0.5rem;
+  margin: 5px 0px 50px;
+  position: relative;
+}
+
+.right-sm-container p {
+  font-size: 0.8rem;
+  color: hsl(184, 14%, 56%);
+}
+
+.right-sm-container .price-tip,
+.right-sm-container .price-total {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 3rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset-btn {
+  margin-top: 50px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  height: 40px;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.reset-btn:disabled {
+  opacity: 0.2;
+}
+
+/* ============================
+   ========== MOBILE ==========
+   ============================ */
+@media (max-width: 800px) {
+  .main-container {
+    padding: 15px 30px;
+  }
+
+  .left-lg-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .num-bar {
+    width: 98%;
+  }
+
+  .small-box {
+    width: 120px;
+  }
+
+  .no-zero {
+    right: 5px;
+  }
+
+  .right-lg-container {
+    padding: 20px;
+  }
+
+  .right-sm-container {
+    margin-bottom: 25px;
+  }
+
+  .right-sm-container h6 {
+    font-size: 0.8rem;
+  }
+
+  .right-sm-container .price-tip,
+  .right-sm-container .price-total {
+    font-size: 1.7rem;
+    top: 10px;
+  }
+
+  .reset-btn {
+    margin-top: 10px;
+  }
+}
